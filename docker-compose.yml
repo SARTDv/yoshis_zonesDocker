@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    container_name: app
+    volumes:
+      - ./MinimaxApi:/workspace/MinimaxApi
+      - ./yoshis_zones:/workspace/yoshis_zones
+    ports:
+      - "5000:5000"
+      - "5173:5173"
+    working_dir: /workspace
+    command: ["bash", "./start_services.sh"]
+
