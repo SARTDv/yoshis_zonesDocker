@@ -17,7 +17,7 @@ cd yoshis_zonesDocker
 Inicia la app con:
 
 ```bash
-./iniciar.sh
+bash ./iniciar.sh
 ```
 
 Ahora solo debes entrar en [Localhost](localhost:5173)
